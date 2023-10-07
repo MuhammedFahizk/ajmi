@@ -6,12 +6,16 @@ body{
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
+   
 
 }
 header{
     background-color: #fff;
     width: 100%;
     height: 38px;
+    position: sticky;
+    top: 0;
+    
 }
 nav{
     width: 97%;
@@ -20,8 +24,10 @@ nav{
     padding-left: 1.5%;
     padding-right: 1.5%;
     display: flex;
-    
+    position: sticky;
+    top: 38px;
     justify-content:space-between;
+    
 }
 nav img{
     width: 120px;
@@ -92,14 +98,16 @@ nav a:hover{
 
 }
 .bgc{
-    width:300px ;
-    height:350px ;
+    width:193px ;
+    height:233px ;
     background-color: #e2211c;
     border-radius: 100%;
     display: none;
     padding: 30px;
     margin-left: -30px;
     margin-top: -280px;
+    overflow: hidden;
+    
 }
 .discover div img{
     width: 100%;
@@ -107,20 +115,215 @@ nav a:hover{
 .discover div:hover .bgc{
 display: block;
 }
+.prodect_revie{
+    width: 100%;
+    height: 438px;
+    /* background: linear-gradient(144deg,#e2211c,#e2211c 24%,#d00b03 80% ); */
+    background: linear-gradient(144deg,#e2211c,#e2211c 24%,#d00b03 80%);
+    opacity: 0.9.5;
+    display: flex;
+    margin-bottom: 10%;
 
-@media screen and (min-width :770px){
+
+}
+.base{
+    width: 90%;
+    height: 75%;
+    margin-top: 5%;
+    display: flex;
+    margin-left: 5%;
+}
+.base div.right{
+    margin-right: 5%;
+    
+
+}
+.base  .right img{
+    margin-left: 110px;
+
+}
+.base.left{
+    margin-left: 30px;
+}
+
+.base h1{
+    font-family: Howling Nightmare;
+    color: #fff;
+    padding-bottom: 15px;
+    font-weight: 800;
+    margin: unset;
+    font-size: 38px;
+    font-weight: 600;
+}
+.base p{
+    font-family: Poppins,sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+}
+.more{
+    width: 75px;
+    height: 28px;
+    padding: 8px 41px;
+    border-radius: 0 20px 0 20px;
+    margin-top: 20px;
+    outline: unset!important;
+    background-color: #eb2f28;
+    box-shadow: unset!important;
+    color: #fff;
+    border: unset;
+    cursor: pointer;
+    display: inline-block;
+}
+.more h5{
+  display: inline-block;
+  float: left;
+  font-family: Poppins,sans-serif;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.making{
+    width: 100%;
+    height: 396px;
+    background-color: #fff;
+    margin-bottom: 8%;
+    
+
+}
+.making .lft{
+ width: 70%;
+ overflow-wrap: break-word;
+
+}
+.making .lft img{
+    width: 75%;
+    height: 80%;
+    margin-top: -170px;
+    margin-left: 5%;
+    
+
+}
+.making .lft .two{
+    width: 100%;
+    height: 150px;
+    margin-left: -30%;
+    margin-top: -100%;
+}
+.not{
+    display: flex;
+}
+.rgt{
+    width: 100%;
+    margin-right: 8%;
+    margin-left: -100px;
+}
+.rgt h1{
+    font-family: Howling Nightmare;
+    color: #e2211c;
+    padding-bottom: 15px;
+    font-weight: 800;
+    margin: unset;
+    font-size: 38px;
+    font-weight: 600;
+}
+.rgt p{
+    font-family: Poppins,sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.gallery{
+    padding-left: 8%;
+    padding-top: 10%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.gallery img{
+    width: 50px;
+    height: 50px;
+}
+.gallery h1{
+    color: #e2211c;
+    opacity: unset;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: Poppins,sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    margin-left: -65%;
+    font-weight: 300;
+
+}
+.recipy{
+    width: auto;
+    height: 365px;
+    background-image: url(image/white-painted-wood-textured-background.jpg);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left:80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.recipy h1{
+    font-family: Howling Nightmare;
+    color: #e2211c;
+    padding-bottom: 15px;
+    font-weight: 800;
+    margin: unset;
+    font-size: 38px;
+    font-weight: 600;
+
+}
+.recipy p{
+    font-family: Poppins,sans-serif;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+}
+.side2 img{
+    width: 260px;
+    height: 360px;
+    margin-left: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width :808px){
     .second p.tab{
         display: none;
     }
     .second p.phone{
         display: none;
     }
-}
+    
+
+
+   }
 
 
 
 
-@media screen and (max-width :768px) {
+
+
+
+
+
+
+
+
+
+@media screen and (max-width :808px) {
    
 nav .menu a{
     display: none;
@@ -214,10 +417,95 @@ div.list input[type="checkbox"]:checked ~ div.content{
 display: block;
 margin-top: 50px;
 
+
+
+
+}
+
+.base h1{
+    font-size: 38px;
+    font-weight: 600;
+
+    
+
+}
+
+.base{
+    height: 400px;
+    width: 700px;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    overflow: hidden;
+
+}
+.base .left{
+    width: 510px;
+    overflow: hidden;
+
+}
+.base .right img{
+    width:150px;
+    margin-left: 20px;    
+}
+.base .left p{
+    text-align: justify;
+
+    line-height: 28px;
+    
+    
+}
+.more{
+    margin-left: 250px;
+
+}
+.gallery{
+    display: none;
+}
+.making{
+    margin-bottom: 0%;
+    height: 230px;
+    padding: 0;
+
+}
+.prodect_revie{
+    margin-bottom: 0;
+}
+.making .lft img{
+    margin-top: -100px;
+}
+.making .lft .two{
+    margin-bottom: 200px;
+    z-index: -2;
+}
+.recipy{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.side1 .more{
+    margin-left: 90px;
+
+}
+.side1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.side2 img{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 }
 
 
-}
+
+
+
+
+
 
 
 
@@ -276,8 +564,63 @@ margin-top: 50px;
         font-size: 13px;
         font-weight: 300;
         word-spacing: 5px;
-        
+        display: block;  
+        margin-left: 20px;      
     }
-    
+    .second h1{
+        padding-bottom: 7px;
+        font-size: 27px;
+        margin-left: 20px;
+        margin-bottom: 7px;
+    }.prodect_revie{
+        height: 850px;
+        width: 100%;
+    }
+    .base{
+        display:grid;
+        grid-template-columns: 1fr ;
+        width: 100%;
+        height: 1000px;
+
+    }
+    .base .left{
+        height: 90%;
+        width: 95%;
+        padding-right: 10%;
+    }
+    .base .left p{
+        font-size: 13px;
+
+    }
+     .more{
+        margin-left: 80px;
+    }
+    .base .right img{
+        width: 90%;
+        height: 80%;
+        margin-top: -150px;
+
+    }
+    .base h1{
+        padding-bottom: 7px;
+        font-size: 27px;
+    }
+    .making{
+        display: none;
+    }
+    .rgt{
+        width: 100%;
+        margin-right: 0%;
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+    .rgt h1{
+        margin-top: 10px;
+    }
+    .rgt p{
+        margin-top: 5px;
+        text-align: justify;
+        margin-right: 10px;
+    }
 }
 
