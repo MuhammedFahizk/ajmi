@@ -1,0 +1,283 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent
+
+}
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 38px;
+}
+nav{
+    width: 97%;
+    height: 93px;
+    background: linear-gradient(144deg,#e2211c,#e2211c 38%,#a91302 69%,#d00b03);
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    display: flex;
+    
+    justify-content:space-between;
+}
+nav img{
+    width: 120px;
+    height: 83px;
+}
+nav .menu{
+    height: 20px;
+    width:50% ;
+    margin-top: 30px;
+    padding-left: 35%;
+   
+}
+nav a{
+    margin-left: 3%;
+    line-height: 28px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #212529;
+    color: #fff;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline tomato;
+    text-decoration-thickness:3px ;
+    text-decoration-: 10px;
+    color:tomato;
+}
+.list{
+    display: none;
+}
+.head img{
+    width: 100%;
+
+}
+.second  {
+    background-image: url(image/section-bg-1.jpg);
+    width: 97%;
+    height: 433px;
+    margin-top: -25px;
+    padding:1.5%;
+}
+.second h1{
+    font-family: Howling Nightmare;
+    color: #e2211c;
+    padding-bottom: 15px;
+    font-weight: 800;
+    margin: unset;
+    font-size: 38px;
+    font-weight: 600;
+}
+.second p.des{
+    font-family: Poppins,sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+.discover{
+    
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.discover div{
+    width: 183px;
+    height: 260px;
+
+}
+.bgc{
+    width:300px ;
+    height:350px ;
+    background-color: #e2211c;
+    border-radius: 100%;
+    display: none;
+    padding: 30px;
+    margin-left: -30px;
+    margin-top: -280px;
+}
+.discover div img{
+    width: 100%;
+}
+.discover div:hover .bgc{
+display: block;
+}
+
+@media screen and (min-width :770px){
+    .second p.tab{
+        display: none;
+    }
+    .second p.phone{
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width :768px) {
+   
+nav .menu a{
+    display: none;
+}
+/* div.list input{
+    
+}  */
+div.list{
+    width: 55px;
+    height: 50px;
+    padding: 5px; 
+    margin-top: 20px;
+ 
+    position: relative;
+    
+    display: block;
+
+
+}
+
+div.list svg{
+    
+    position: absolute;
+    transition: all 0.2s ease;
+}
+div.list .header{
+    width: 55px;
+    height: 50px;
+    padding: 5px; 
+   
+    display: block;
+    cursor:pointer;
+    font-size: 1.7rem;
+    transition: all 0.5s ease;}
+
+div.list input[type="checkbox"]{
+    display: none;
+}
+div.list div.content{
+   
+    
+    display: none;
+
+    /* padding: 0px 30px;
+    font-size: 1.5rem;
+    font-weight: 400; */
+    max-height: 0;
+    margin-left: -1100%;
+    position: relative;
+    height: 288px;
+    width: 700px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    background: linear-gradient(144deg,#e2211c,#e2211c 38%,#a91302 69%,#d00b03);
+}
+div.list input[type="checkbox"]:checked ~ div.content{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-height: 600px;
+    width: 1210%;
+    position: absolute;
+    display: block;
+
+    
+}
+
+.content a{
+    display: block;
+}
+.second p.des{
+    display: none;
+}
+.second p.tab{
+    font-family: Poppins,sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.second p.phone{
+    display: none;
+}
+.discover div{
+    display: none;
+
+}
+.discover{
+    display: flex;
+    justify-content:space-around;
+}
+.discover .main{
+display: block;
+margin-top: 50px;
+
+}
+
+
+}
+
+
+
+
+
+@media screen and (max-width:468px) {
+    nav{
+        height: 56px;
+    }
+    nav img {
+        width: 67px;
+        height: 46px;
+    }.list label{
+        width: 33px;
+        height: 33px;
+        margin-top: -15px;
+    }
+    .list svg {
+        width :33px;
+        height: 33px;
+    }
+    div.list div.content{
+   
+    
+        display: none;
+    
+        /* padding: 0px 30px;
+        font-size: 1.5rem;
+        font-weight: 400; */
+        max-height: 0;
+        margin-left: -480%;
+        position: relative;
+        height: 288px;
+        width: 700px;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        background: linear-gradient(144deg,#e2211c,#e2211c 38%,#a91302 69%,#d00b03);
+    }
+    div.list input[type="checkbox"]:checked ~ div.content{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-height: 360px;
+        margin-top: -20px;
+        width: 597%;
+        position: absolute;
+        display: block;
+    
+        
+    }
+    .second p.tab{
+        display: none;
+    }
+    .second p.phone{
+        font-family: Poppins,sans-serif;
+        line-height: 28px;
+        font-size: 13px;
+        font-weight: 300;
+        word-spacing: 5px;
+        
+    }
+    
+}
+
