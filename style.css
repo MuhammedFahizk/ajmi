@@ -69,6 +69,8 @@ nav a:hover{
     height: 433px;
     margin-top: -25px;
     padding:1.5%;
+    overflow: hidden;
+    padding-right: 0%;
 }
 .second h1{
     font-family: Howling Nightmare;
@@ -84,6 +86,7 @@ nav a:hover{
     line-height: 28px;
     font-size: 16px;
     font-weight: 300;
+    
     
 }
 .discover{
@@ -289,6 +292,159 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 360px;
     margin-left: 200px;
 }
+.testimonel{
+    width: 100%;
+    height: 192px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-color: #fff;
+}
+.testimonel h1{
+    font-family: Howling Nightmare;
+    color: #e2211c;
+    padding-bottom: 15px;
+    margin: unset;
+    font-size: 38px;
+    font-weight: 600;
+}
+.testimonel img{
+width: 40px;
+height: 45px;
+
+border-radius: 50%;
+
+
+
+
+}
+.testimonel p{
+    font-family: Poppins,sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 300;
+    opacity: .6;
+}
+.testimonel h3{
+    color: #e2211c;
+    opacity: 0.6;
+    font-size: 20px;
+    font-family: Poppins,sans-serif;
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: 300;
+}
+.media{
+    width: 100%;
+    height: 475px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+.media .photo img{
+    width: 100%;
+    height: 437px;
+}
+.media .other{
+    display: grid;
+    grid-template-rows: 65% 35%;
+    
+}
+.top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.top .r{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.top .you{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.top .r img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.media .bottom{
+    display: grid;
+    background-color: #fff;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.media .bottom .red{
+    border-radius: 0 20px 0 20px;
+    background-color:red;
+
+}
+.media .bottom .red i{
+    fill: white;
+    vertical-align: middle;
+    font-size: 76px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+.media .bottom .white i{
+    fill: white;
+    vertical-align: middle;
+    font-size: 76px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    height: 100%;
+    text-decoration: none;
+    color: red;
+}
+.media .photo h4{
+    background: linear-gradient(90deg,#f32170,#e2211c,#ac1202,#ca0c03);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 85px;
+    font-weight: 100;
+    margin-top: -200px;
+    position: absolute;
+    margin-left: 100px;    
+   
+
+}
+.media .photo span{
+    
+    margin-right: -50px;
+    font-weight: 400;
+    font-size: 165px;
+    
+}
+.media a{
+    text-decoration: none;
+}
+.media .other .r h4 span{
+    font-weight: 400;
+    font-size: 165px;
+    margin-right: -40px;
+    margin-left:50px ;
+
+}
+.media .other .r h4{
+background: linear-gradient(90deg,#f32170,#e2211c,#ac1202,#ca0c03);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 1rem;
+    position: absolute;
+    margin-top: 100px;
+}
+.mob{
+    display: none;
+}
+
+
 
 
 
@@ -497,7 +653,41 @@ margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
 }
-
+.testimonel h1{
+    font-family: Howling Nightmare;
+    color: #e2211c;
+    padding-bottom: 15px;
+    margin: unset;
+    font-size: 27px;
+    font-weight: 600;
+}
+.testimonel p{
+    font-size: 16px;
+    text-align: center;
+    text-align: center;
+    font-weight: 300px;
+}
+.media{
+    height: 1026px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.media .photo{
+    height: 475px;
+  
+}
+.media a{
+    height: 475px;
+}
+.media .other{
+    margin-top: -320px;
+}
+.media .bottom{
+    height: 122px;
+}
+.media .photo h4{
+    margin-left: 30%;
+}
 }
 
 
@@ -622,5 +812,68 @@ margin-top: 50px;
         text-align: justify;
         margin-right: 10px;
     }
-}
+    .recipy{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow:visible;
+    }
+    .recipy .side1 p{
+        text-align: justify;
+        margin-right: 10px;
+        font-size: 13px;
+        word-spacing: -2px;
+    }
+    .recipy .side2 img{
+        margin-right: 30px;
+        margin-left: 35px;
+        margin-top: 20px;
+    }
+    .media{
+        display: grid;
+        grid-template-columns: max-content;
+        
+    }
+    .media{
+        height: 100%;
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .media .other .top{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* .media .other .r{
+        width: 100%;
+    }
+} */
+    .top{
+        height: 300%;
+    }
+    .top .you{
+        height: 20%;
+    }
+    .bottom{
+       display: none;
+    }
+    .mob{
+        display: block;
+        width: 250%;
+        height: 130%;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top:55%;
+    }
+    .media .photo h4{
+        margin-top: -70%;
+        margin-left: 20%;
+        font-size: 60px;
+    }
+    .media .photo span{
+        font-weight: 400;
+    font-size: 90px;
+    margin-right: -25px;
+    }
 
+}
